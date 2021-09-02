@@ -1,0 +1,215 @@
+/*У ссылки должны быть стили для состояния покоя,
+при наведения курсора :hover, в момент нажатия :focus,
+активного :active и иногда состояния, когда пользователь
+уже посещал эту страницу :visited.
+
+У кнопки нет состояния :visited,
+зато есть состояние блока :disabled.
+
+Вставить svg
+*/
+body {
+  width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: #AE7C78;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19.5px;
+}
+
+a {
+  text-decoration: none;
+  color: #AE7C78;
+}
+
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 26px;
+  min-height: 64px;
+  border-top: 1px solid #AE7C78;
+  border-bottom: 1px solid #AE7C78;
+}
+
+.container {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.navigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navigation-list {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navigation-list li:nth-child(3) {
+  margin-right: 62px;
+}
+
+.navigation-list li:nth-child(4) {
+  margin-left: 62px;
+}
+
+.header-logo {
+  position: absolute;
+  left: 46%;
+  width: 100px;
+  height: 32.28px;
+}
+
+.main-info {
+  display: flex;
+  min-height: 544px;
+  padding-top: 82px;
+  padding-bottom: 48px;
+}
+
+.main-info-title {
+  margin: 0;
+  padding-bottom: 24px;
+  font-family: 'Playfair-display', 'Times New Roman', serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 44px;
+  line-height: 58.65px;
+}
+
+.main-info-txt {
+  margin: 0;
+  padding-bottom: 64px;
+  font-size: 24px;
+  line-height: 29.26px;
+}
+
+.main-info-title span {
+  font-family: 'Playfair_display', 'Times New Roman', serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.main-info div:nth-child(1) {
+  width: 384px;
+  padding-right: 23px;
+}
+
+.main-info-button, .popular-button {
+  display: flex;
+  width: 285px;
+  height: 80px;
+  border-radius: 40px;
+  background-color: #D89999;
+}
+
+.main-info-button span, .popular-button span {
+  margin: auto;
+  color: #FFFFFF;
+}
+
+.main-info div:nth-child(2) {
+  display: flex;
+}
+
+.main-info-image-left {
+  display: block;
+  width: 386px;
+  padding-top: 58px;
+  padding-right: 15px;
+}
+
+.main-info-image-right {
+  display: block;
+  width: 387px;
+  outline: none;
+}
+
+.description-list-item dt {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.description-list-item:nth-child(1)::before {
+  content: url('../img/description/truck.svg');
+}
+
+.description-list-item:nth-child(2)::before {
+  content: url('../img/description/tulips.svg');
+}
+
+.description-list-item:nth-child(3)::before {
+  content: url('../img/description/camera.svg');
+}
+
+.popular-bouquets {
+  font-family: 'Playfair_display', 'Times New Roman', serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 47.99px;
+}
+
+.bouquet-gentle, .bouquet-gentle-price {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 29.26px;
+}
+
+.slider-controls button {
+  background-color: transparent;
+  border: none;
+}
+
+.button-left::before {
+  content: url('../img/popular/arrow-left.svg');
+}
+
+.button-right::before {
+  content: url('../img/popular/arrow-right.svg');
+}
+
+.catalog-section {
+  display: inline-block;
+  position: relative;
+}
+
+.catalog-section-title {
+  font-family: 'Playfair-display', 'Times New Roman', serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 47.99px;
+  color: #FFFFFF;
+  position: absolute;
+}
+
+.catalog-section-subtitle {
+  color: #FFFFFF;
+  position: absolute;
+}
+
+.catalog-section-container {
+  background-color: rgba(174, 124, 120, 0.6);
+  border-radius: 10px;
+}
